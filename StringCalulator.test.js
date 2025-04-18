@@ -39,3 +39,7 @@ test('return sum of numbers when numbers are with ; delimeter', () => {
 test('return sum of numbers when numbers are with \n , ; delimeters', () => {
   expect(Add("1;2;\n,3")).toBe(6);
 })
+
+test('return sum of numbers when numbers are with // \n , ; delimeters', () => {
+  expect(Add("//;\n1;2")).toBe(3);
+})
