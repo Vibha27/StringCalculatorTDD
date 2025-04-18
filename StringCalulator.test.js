@@ -47,3 +47,7 @@ test('return sum of numbers when numbers are with // \n , ; delimeters', () => {
 test('throws error with message when negative numbers are present', () => {
   expect(() => Add("1,-2,3,-4")).toThrow("negative numbers not allowed -2,-4");
 });
+
+test('numbers bigger than 1000 should be ignored', () => {
+  expect(Add("2,1001")).toBe(2);
+});

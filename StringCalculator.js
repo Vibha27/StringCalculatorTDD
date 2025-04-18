@@ -9,7 +9,10 @@ function Add(numbers) {
     throw new Error(`negative numbers not allowed ${negativeArr.join(",")}`)
   }
 
-  return numArr.reduce((sum, n) => sum + parseInt(n), 0);
+  return numArr
+        .map(n => parseInt(n))
+        .filter(n => n <= 1000)
+        .reduce((sum, n) => sum + n, 0);
 
 }
 
