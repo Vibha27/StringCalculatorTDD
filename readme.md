@@ -38,6 +38,6 @@ Built using JavaScript and tested with [Jest](https://jestjs.io/).
 | 14 | `"//[***]\n1***2***3"`             | `6`                        | Custom delimiter of any length (`***`)          |
 | 15 | `"//[*][%]\n1*2%3"`                | `6`                        | Multiple custom delimiters (`*`, `%`)           |
 
-## Test Results
+## 💯Test Results
 
 ![alt text](image.png)
