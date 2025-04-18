@@ -43,3 +43,7 @@ test('return sum of numbers when numbers are with \n , ; delimeters', () => {
 test('return sum of numbers when numbers are with // \n , ; delimeters', () => {
   expect(Add("//;\n1;2")).toBe(3);
 })
+
+test('throws error with message when negative numbers are present', () => {
+  expect(() => Add("1,-2,3,-4")).toThrow("negative numbers not allowed -2,-4");
+});
