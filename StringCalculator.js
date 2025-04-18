@@ -1,8 +1,8 @@
 function Add(numbers) {
   if (!numbers) return 0;
 
-  const numArr = numbers.split(/[//\n,;]+/).filter(num => num != "");
-  
+  const numArr = numbers.split(/[//\n,;*\[\]]+/).filter(num => num != "");
+  console.log(numArr)
   const negativeArr = numArr.filter(num => num < 0);
 
   if (negativeArr.length > 0) {
@@ -16,6 +16,6 @@ function Add(numbers) {
 
 }
 
-// console.log(Add("//;\n-1;-2"))
+console.log(Add("//[***]\n1***2***3"))
 
 module.exports = Add;
