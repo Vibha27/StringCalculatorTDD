@@ -35,3 +35,7 @@ test('return 0 when only comma is passed', () => {
 test('return sum of numbers when numbers are with ; delimeter', () => {
   expect(Add("1;2;3")).toBe(6);
 })
+
+test('return sum of numbers when numbers are with \n , ; delimeters', () => {
+  expect(Add("1;2;\n,3")).toBe(6);
+})
